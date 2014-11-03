@@ -25,9 +25,7 @@ except ImportError:
     import simplejson as json
 
 solr_server = "127.0.0.1"
-tyrant_server = "192.168.3.9"
-#server = "127.0.0.1"
-#server = "162.242.244.91"
+tyrant_server = "127.0.0.1"
 
 _fp_solr = solr.SolrConnectionPool("http://" + solr_server + ":8502/solr/fp")
 _hexpoch = int(time.time() * 1000)
